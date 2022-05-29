@@ -1,7 +1,7 @@
 require "yaml"
-require_relative "../lib/generate.rb"
-require_relative "../lib/autokey_binding.rb"
-require_relative "../lib/autokey_send_keys_script.rb"
+require_relative "../lib/generate"
+require_relative "../lib/autokey_binding"
+require_relative "../lib/autokey_send_keys_script"
 
 describe "generating Autokey config" do
   # input: hash (in the real program, parsed from a yaml file)

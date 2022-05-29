@@ -1,4 +1,4 @@
-require_relative "../lib/autokey_binding.rb"
+require_relative "../lib/autokey_binding"
 
 describe AutokeyBinding do
   describe :to_s do

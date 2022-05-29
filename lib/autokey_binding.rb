@@ -1,3 +1,5 @@
+require "json"
+
 class AutokeyBinding < Struct.new(:modifiers, :hotkey)
     def to_s
       JSON.pretty_generate({

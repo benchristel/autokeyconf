@@ -1,6 +1,6 @@
 require "yaml"
-require "json"
 require_relative "../lib/generate.rb"
+require_relative "../lib/autokey_binding.rb"
 require_relative "../lib/autokey_send_keys_script.rb"
 
 describe "generating Autokey config" do

@@ -3,7 +3,7 @@ require_relative "../lib/autokey_binding"
 describe AutokeyBinding do
   describe :to_s do
     it "renders JSON" do
-      expect(AutokeyBinding.new(["foo"], "bar").to_s).to eq(<<-JSON.chomp)
+      expect(AutokeyBinding.new(["shift"], "z").to_s).to eq(<<-JSON.chomp)
 {
   "usageCount": 0,
   "omitTrigger": false,
@@ -19,9 +19,9 @@ describe AutokeyBinding do
     "triggerInside": false
   },
   "hotkey": {
-    "hotKey": "bar",
+    "hotKey": "z",
     "modifiers": [
-      "<foo>"
+      "<shift>"
     ]
   },
   "modes": [
@@ -35,7 +35,7 @@ describe AutokeyBinding do
   "type": "script",
   "store": {
   },
-  "description": "foo+bar"
+  "description": "shift+z"
 }
         JSON
     end

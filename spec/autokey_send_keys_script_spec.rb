@@ -17,4 +17,9 @@ describe AutokeySendKeysScript do
     expect(AutokeySendKeysScript.new(["super", "f"]).to_s)
       .to eq('keyboard.send_keys("<super>+f")')
   end
+
+  it "downcases key names" do
+    expect(AutokeySendKeysScript.new(["Super", "F"]).to_s)
+      .to eq('keyboard.send_keys("<super>+f")')
+  end
 end

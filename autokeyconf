@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require "yaml"
+require_relative "lib/directory"
+require_relative "lib/generate"
+
+config_path = ARGV[0]
+unless config_path
+  puts "You must provide a config path"
+  exit 1
+end
+
+Directory.new("#{ENV["HOME"]}/.config/autokey/data/autokeyconf")
+  .write(generate(YAML.load(File.read(ARGV[0]))))

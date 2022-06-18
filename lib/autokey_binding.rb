@@ -1,4 +1,5 @@
 require "json"
+require_relative "key"
 
 class AutokeyBinding < Struct.new(:modifiers, :hotkey)
     def to_s
@@ -15,8 +16,8 @@ class AutokeyBinding < Struct.new(:modifiers, :hotkey)
           triggerInside: false
         },
         hotkey: {
-          hotKey: hotkey,
-          modifiers: modifiers.map {|m| "<#{m}>"},
+          hotKey: Key.new(hotkey),
+          modifiers: modifiers.map(&Key.method(:new)),
         },
         modes: [
           3

@@ -7,16 +7,16 @@ describe "generating Autokey config" do
   # input: hash (in the real program, parsed from a yaml file)
   # output: set of written files (a Hash that maps file paths to contents)
   let(:mapping) do
-    YAML.parse(<<-YAML)
-global:
-  Super+W: Alt+F4
+    YAML.load(<<-YAML)
+---
+Super+w: Alt+F4
 YAML
   end
 
   let(:hotkey_directory) do
     {
-      "global/.Alt+F4.json": AutokeyBinding.new(["super"], "w"),
-      "global/Alt+F4.py": AutokeySendKeysScript.new("Alt+F4"),
+      ".Super+w.json" => AutokeyBinding.new(["super"], "w"),
+      "Super+w.py" => AutokeySendKeysScript.new(["Alt", "F4"]),
     }
   end
 

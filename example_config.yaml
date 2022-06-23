@@ -1,14 +1,84 @@
-Super+W: Ctrl+W
-Super+Q: Ctrl+Q
-Super+C: Ctrl+C
-Super+V: Ctrl+V
-Super+X: Ctrl+X
-Super+Z: Ctrl+Z
-Super+Left: Home
-Super+Right: End
-Super+Shift+Left: Shift+Home
-Super+Shift+Right: Shift+End
-Meta+Left: Ctrl+Left
-Meta+Right: Ctrl+Right
-Meta+Shift+Left: Ctrl+Shift+Left
-Meta+Shift+Right: Ctrl+Shift+Right
+default:
+  # Super is Control
+  Super+A: Ctrl+A
+  Super+B: Ctrl+B
+  Super+C: Ctrl+C
+  Super+D: Ctrl+D
+  Super+E: Ctrl+E
+  Super+F: Ctrl+F
+  Super+G: Ctrl+G
+  Super+H: Ctrl+H
+  Super+I: Ctrl+I
+  Super+J: Ctrl+J
+  Super+K: Ctrl+K
+  Super+L: Ctrl+L
+  Super+M: Ctrl+M
+  Super+N: Ctrl+N
+  Super+O: Ctrl+O
+  Super+P: Ctrl+P
+  Super+Q: Ctrl+Q
+  Super+R: Ctrl+R
+  Super+S: Ctrl+S
+  Super+T: Ctrl+T
+  Super+U: Ctrl+U
+  Super+V: Ctrl+V
+  Super+W: Ctrl+W
+  Super+X: Ctrl+X
+  Super+Y: Ctrl+Y
+  Super+Z: Ctrl+Z
+
+  # Text Navigation
+  Super+Left: Home
+  Super+Right: End
+  Super+Shift+Left: Shift+Home
+  Super+Shift+Right: Shift+End
+  Alt+Left: Ctrl+Left
+  Alt+Right: Ctrl+Right
+  Alt+Shift+Left: Ctrl+Shift+Left
+  Alt+Shift+Right: Ctrl+Shift+Right
+
+  # Tabs
+  Super+Shift+[: Ctrl+Shift+Tab
+  Super+Shift+]: Ctrl+Tab
+
+firefox:
+  # Switch to tab by number
+  Super+1: Alt+1
+  Super+2: Alt+2
+  Super+3: Alt+3
+  Super+4: Alt+4
+  Super+5: Alt+5
+  Super+6: Alt+6
+  Super+7: Alt+7
+  Super+8: Alt+8
+  Super+9: Alt+9
+
+Gnome-terminal:
+  Super+A: Ctrl+Shift+A
+  Super+B: Ctrl+Shift+B
+  Super+C: Ctrl+Shift+C
+  Super+D: Ctrl+Shift+D
+  Super+E: Ctrl+Shift+E
+  Super+F: Ctrl+Shift+F
+  Super+G: Ctrl+Shift+G
+  Super+H: Ctrl+Shift+H
+  Super+I: Ctrl+Shift+I
+  Super+J: Ctrl+Shift+J
+  Super+K: Ctrl+Shift+K
+  Super+L: Ctrl+Shift+L
+  Super+M: Ctrl+Shift+M
+  Super+N: Ctrl+Shift+N
+  Super+O: Ctrl+Shift+O
+  Super+P: Ctrl+Shift+P
+  Super+Q: Ctrl+Shift+Q
+  Super+R: Ctrl+Shift+R
+  Super+S: Ctrl+Shift+S
+  Super+T: Ctrl+Shift+T
+  Super+U: Ctrl+Shift+U
+  Super+V: Ctrl+Shift+V
+  Super+W: Ctrl+Shift+W
+  Super+X: Ctrl+Shift+X
+  Super+Y: Ctrl+Shift+Y
+  Super+Z: Ctrl+Shift+Z
+  Super+Shift+[: Ctrl+Page_Up
+  Super+Shift+]: Ctrl+Page_Down

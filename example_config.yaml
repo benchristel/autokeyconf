@@ -26,6 +26,8 @@ default:
   Super+X: Ctrl+X
   Super+Y: Ctrl+Y
   Super+Z: Ctrl+Z
+  Super+=: Ctrl+=
+  Super+-: Ctrl+-
 
   # Text Navigation
   Super+Left: Home

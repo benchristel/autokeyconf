@@ -10,5 +10,7 @@ unless config_path
   exit 1
 end
 
+FileUtils.rm_rf "#{ENV["HOME"]}/.config/autokey/data/autokeyconf"
+
 Directory.new("#{ENV["HOME"]}/.config/autokey/data/autokeyconf")
   .write(generate(YAML.load(File.read(ARGV[0]))))

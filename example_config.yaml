@@ -37,6 +37,16 @@ default:
   Alt+Shift+Left: Ctrl+Shift+Left
   Alt+Shift+Right: Ctrl+Shift+Right
 
+  # Emacs-style Text Navigation
+  Ctrl+B: Left
+  Ctrl+F: Right
+  Ctrl+A: Home
+  Ctrl+E: End
+  Ctrl+H: Backspace
+  Ctrl+D: Delete
+  Ctrl+P: Up
+  Ctrl+N: Down
+
   # Tabs
   Super+Shift+[: Ctrl+Shift+Tab
   Super+Shift+]: Ctrl+Tab

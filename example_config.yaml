@@ -28,6 +28,11 @@ default:
   Super+Z: Ctrl+Z
   Super+=: Ctrl+=
   Super+-: Ctrl+-
+  Super+,: Ctrl+,
+  Super+.: Ctrl+.
+  Super+/: Ctrl+/
+  Super+;: Ctrl+;
+  Super+': Ctrl+'
 
   # Text Navigation
   Super+Left: Home

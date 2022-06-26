@@ -1,5 +1,6 @@
 require_relative "autokey_binding"
 require_relative "autokey_send_keys_script"
+require_relative "filename"
 
 class Keymap
   def initialize(config)
@@ -70,7 +71,7 @@ def generate(config)
   keymap = Keymap.new(config)
   files_to_write = {}
   keymap.input_chords.each do |chord|
-    files_to_write[".#{chord}.json"] =
+    files_to_write[Filename.new(".#{chord}.json").to_s] =
       AutokeyBinding.new(chord.modifiers, chord.hotkey)
 
     app_specific_keys = {}
@@ -79,7 +80,7 @@ def generate(config)
       app_specific_keys[filter] = custom_output_for_app.to_a if custom_output_for_app
     end
 
-    files_to_write["#{chord}.py"] =
+    files_to_write[Filename.new("#{chord}.py").to_s] =
       AutokeySendKeysScript.new(keymap.output_for("default", chord).to_a, app_specific_keys)
   end
   files_to_write

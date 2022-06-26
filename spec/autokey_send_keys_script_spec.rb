@@ -76,4 +76,32 @@ else:
   keyboard.send_keys('<ctrl>+f')
 EOF
   end
+
+  it "escapes single quotes" do
+    script = AutokeySendKeysScript.new(
+      ["ctrl", "'"],
+      {}
+    ).to_s
+    expect(script).to eq <<EOF.chomp
+import re
+if False:
+  pass
+else:
+  keyboard.send_keys('<ctrl>+\\'')
+EOF
+  end
+
+  it "escapes backslashes" do
+    script = AutokeySendKeysScript.new(
+      ["ctrl", "\\"],
+      {}
+    ).to_s
+    expect(script).to eq <<EOF.chomp
+import re
+if False:
+  pass
+else:
+  keyboard.send_keys('<ctrl>+\\\\')
+EOF
+  end
 end

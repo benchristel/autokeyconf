@@ -99,3 +99,7 @@ Gnome-terminal:
   Super+Z: Ctrl+Shift+Z
   Super+Shift+[: Ctrl+Page_Up
   Super+Shift+]: Ctrl+Page_Down
+
+code.Code:
+  Super+Shift+[: Ctrl+Page_Up
+  Super+Shift+]: Ctrl+Page_Down

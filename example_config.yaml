@@ -54,10 +54,6 @@ default:
   Ctrl+P: Up
   Ctrl+N: Down
 
-  # Tabs
-  Super+Shift+[: Ctrl+Shift+Tab
-  Super+Shift+]: Ctrl+Tab
-
 firefox:
   # Switch to tab by number
   Super+1: Alt+1
@@ -69,6 +65,10 @@ firefox:
   Super+7: Alt+7
   Super+8: Alt+8
   Super+9: Alt+9
+
+  # Tabs
+  Super+Shift+[: Ctrl+Shift+Tab
+  Super+Shift+]: Ctrl+Tab
 
 Gnome-terminal:
   Super+A: Ctrl+Shift+A
@@ -97,9 +97,5 @@ Gnome-terminal:
   Super+X: Ctrl+Shift+X
   Super+Y: Ctrl+Shift+Y
   Super+Z: Ctrl+Shift+Z
-  Super+Shift+[: Ctrl+Page_Up
-  Super+Shift+]: Ctrl+Page_Down
-
-code.Code:
   Super+Shift+[: Ctrl+Page_Up
   Super+Shift+]: Ctrl+Page_Down

@@ -50,7 +50,6 @@ default:
   Ctrl+A: Home
   Ctrl+E: End
   Ctrl+H: Backspace
-  Ctrl+D: Delete
   Ctrl+P: Up
   Ctrl+N: Down
 
